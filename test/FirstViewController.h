@@ -10,4 +10,10 @@
 
 @interface FirstViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@property (weak, nonatomic) IBOutlet UIButton *myButton;
+
+
+- (IBAction)buttonClicked:(id)sender;
+
 @end
