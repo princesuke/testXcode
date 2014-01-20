@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FirstViewController.h
 //  test
 //
 //  Created by Mobile's iMac on 1/13/2557 BE.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface FirstViewController : UIViewController
 
 @end
