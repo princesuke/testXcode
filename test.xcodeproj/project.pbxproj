@@ -13,15 +13,14 @@
 		F62F3C3F1883F08B007D5D48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F62F3C3D1883F08B007D5D48 /* InfoPlist.strings */; };
 		F62F3C411883F08B007D5D48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F62F3C401883F08B007D5D48 /* main.m */; };
 		F62F3C451883F08B007D5D48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F62F3C441883F08B007D5D48 /* AppDelegate.m */; };
-		F62F3C481883F08B007D5D48 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62F3C461883F08B007D5D48 /* Main_iPhone.storyboard */; };
-		F62F3C4B1883F08B007D5D48 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62F3C491883F08B007D5D48 /* Main_iPad.storyboard */; };
-		F62F3C4E1883F08B007D5D48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F62F3C4D1883F08B007D5D48 /* ViewController.m */; };
 		F62F3C501883F08B007D5D48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62F3C4F1883F08B007D5D48 /* Images.xcassets */; };
 		F62F3C571883F08B007D5D48 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62F3C561883F08B007D5D48 /* XCTest.framework */; };
 		F62F3C581883F08B007D5D48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62F3C341883F08B007D5D48 /* Foundation.framework */; };
 		F62F3C591883F08B007D5D48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62F3C381883F08B007D5D48 /* UIKit.framework */; };
-		F62F3C611883F08B007D5D48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F62F3C5F1883F08B007D5D48 /* InfoPlist.strings */; };
-		F62F3C631883F08B007D5D48 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F62F3C621883F08B007D5D48 /* testTests.m */; };
+		F62F3C6F1883F1E1007D5D48 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F62F3C6D1883F1E1007D5D48 /* FirstViewController.m */; };
+		F62F3C701883F1E1007D5D48 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62F3C6E1883F1E1007D5D48 /* FirstViewController.xib */; };
+		F62F3C741883F5D7007D5D48 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F62F3C721883F5D7007D5D48 /* SecondViewController.m */; };
+		F62F3C751883F5D7007D5D48 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62F3C731883F5D7007D5D48 /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F62F3C311883F08B007D5D48 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62F3C311883F08B007D5D48 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = test.app; path = "/Users/worawitnawaritloha/Documents/workspace/testXcode/build/Debug-iphoneos/test.app"; sourceTree = "<absolute>"; };
 		F62F3C341883F08B007D5D48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F62F3C361883F08B007D5D48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F62F3C381883F08B007D5D48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -45,16 +44,15 @@
 		F62F3C421883F08B007D5D48 /* test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-Prefix.pch"; sourceTree = "<group>"; };
 		F62F3C431883F08B007D5D48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F62F3C441883F08B007D5D48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F62F3C471883F08B007D5D48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		F62F3C4A1883F08B007D5D48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		F62F3C4C1883F08B007D5D48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F62F3C4D1883F08B007D5D48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F62F3C4F1883F08B007D5D48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F62F3C551883F08B007D5D48 /* testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62F3C551883F08B007D5D48 /* testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = testTests.xctest; path = "/Users/worawitnawaritloha/Documents/workspace/testXcode/build/Debug-iphoneos/testTests.xctest"; sourceTree = "<absolute>"; };
 		F62F3C561883F08B007D5D48 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F62F3C5E1883F08B007D5D48 /* testTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testTests-Info.plist"; sourceTree = "<group>"; };
-		F62F3C601883F08B007D5D48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F62F3C621883F08B007D5D48 /* testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTests.m; sourceTree = "<group>"; };
+		F62F3C6C1883F1E1007D5D48 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		F62F3C6D1883F1E1007D5D48 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F62F3C6E1883F1E1007D5D48 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		F62F3C711883F5D7007D5D48 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F62F3C721883F5D7007D5D48 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F62F3C731883F5D7007D5D48 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,19 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				F62F3C3A1883F08B007D5D48 /* test */,
-				F62F3C5C1883F08B007D5D48 /* testTests */,
 				F62F3C331883F08B007D5D48 /* Frameworks */,
-				F62F3C321883F08B007D5D48 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		F62F3C321883F08B007D5D48 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F62F3C311883F08B007D5D48 /* test.app */,
-				F62F3C551883F08B007D5D48 /* testTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		F62F3C331883F08B007D5D48 /* Frameworks */ = {
@@ -116,12 +103,14 @@
 			children = (
 				F62F3C431883F08B007D5D48 /* AppDelegate.h */,
 				F62F3C441883F08B007D5D48 /* AppDelegate.m */,
-				F62F3C461883F08B007D5D48 /* Main_iPhone.storyboard */,
-				F62F3C491883F08B007D5D48 /* Main_iPad.storyboard */,
-				F62F3C4C1883F08B007D5D48 /* ViewController.h */,
-				F62F3C4D1883F08B007D5D48 /* ViewController.m */,
 				F62F3C4F1883F08B007D5D48 /* Images.xcassets */,
 				F62F3C3B1883F08B007D5D48 /* Supporting Files */,
+				F62F3C6C1883F1E1007D5D48 /* FirstViewController.h */,
+				F62F3C6D1883F1E1007D5D48 /* FirstViewController.m */,
+				F62F3C6E1883F1E1007D5D48 /* FirstViewController.xib */,
+				F62F3C711883F5D7007D5D48 /* SecondViewController.h */,
+				F62F3C721883F5D7007D5D48 /* SecondViewController.m */,
+				F62F3C731883F5D7007D5D48 /* SecondViewController.xib */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -133,24 +122,6 @@
 				F62F3C3D1883F08B007D5D48 /* InfoPlist.strings */,
 				F62F3C401883F08B007D5D48 /* main.m */,
 				F62F3C421883F08B007D5D48 /* test-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F62F3C5C1883F08B007D5D48 /* testTests */ = {
-			isa = PBXGroup;
-			children = (
-				F62F3C621883F08B007D5D48 /* testTests.m */,
-				F62F3C5D1883F08B007D5D48 /* Supporting Files */,
-			);
-			path = testTests;
-			sourceTree = "<group>";
-		};
-		F62F3C5D1883F08B007D5D48 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F62F3C5E1883F08B007D5D48 /* testTests-Info.plist */,
-				F62F3C5F1883F08B007D5D48 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -216,7 +187,7 @@
 				Base,
 			);
 			mainGroup = F62F3C281883F08B007D5D48;
-			productRefGroup = F62F3C321883F08B007D5D48 /* Products */;
+			productRefGroup = F62F3C281883F08B007D5D48;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -231,9 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F62F3C4B1883F08B007D5D48 /* Main_iPad.storyboard in Resources */,
+				F62F3C751883F5D7007D5D48 /* SecondViewController.xib in Resources */,
 				F62F3C501883F08B007D5D48 /* Images.xcassets in Resources */,
-				F62F3C481883F08B007D5D48 /* Main_iPhone.storyboard in Resources */,
+				F62F3C701883F1E1007D5D48 /* FirstViewController.xib in Resources */,
 				F62F3C3F1883F08B007D5D48 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,7 +213,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F62F3C611883F08B007D5D48 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F62F3C4E1883F08B007D5D48 /* ViewController.m in Sources */,
+				F62F3C741883F5D7007D5D48 /* SecondViewController.m in Sources */,
 				F62F3C451883F08B007D5D48 /* AppDelegate.m in Sources */,
+				F62F3C6F1883F1E1007D5D48 /* FirstViewController.m in Sources */,
 				F62F3C411883F08B007D5D48 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +234,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F62F3C631883F08B007D5D48 /* testTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,30 +252,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				F62F3C3E1883F08B007D5D48 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F62F3C461883F08B007D5D48 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F62F3C471883F08B007D5D48 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		F62F3C491883F08B007D5D48 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F62F3C4A1883F08B007D5D48 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		F62F3C5F1883F08B007D5D48 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F62F3C601883F08B007D5D48 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -474,6 +420,7 @@
 				F62F3C681883F08B007D5D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F62F3C691883F08B007D5D48 /* Build configuration list for PBXNativeTarget "testTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +429,7 @@
 				F62F3C6B1883F08B007D5D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,8 +7,9 @@
 //
 
 #import "FirstViewController.h"
+#import "SecondViewController.h"
 
-@interface FirstViewController ()
+@interface FirstViewController () <UIAlertViewDelegate>
 
 @end
 
@@ -26,7 +27,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.myLabel.text = @"Hello";
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,5 +38,23 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)buttonClicked:(id)sender {
+    
+    SecondViewController *secondVC = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    [self.navigationController pushViewController:secondVC animated:YES];
+}
+
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        self.myLabel.text = @"Hello, World";
+    }
+}
+
+
+
+
 
 @end
