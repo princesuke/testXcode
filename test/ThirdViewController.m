@@ -7,7 +7,7 @@
 //
 
 #import "ThirdViewController.h"
-
+#import "SecondViewController.h"
 
 @interface ThirdViewController ()
 
@@ -32,7 +32,7 @@
     self.view.layer.borderWidth = 1;
     self.view.layer.borderColor = [UIColor greenColor].CGColor;
     // Do any additional setup after loading the view from its nib.
-    UILabel * mylabel1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    UILabel * mylabel1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
 
     mylabel1.textColor = [UIColor blackColor];
     mylabel1.text = self.myText1;
@@ -52,9 +52,47 @@
     [self.view addSubview:mylabel1];
     
 
+    UITextField * myTextField = [[UITextField alloc] initWithFrame:CGRectMake(0, 200, 100, 50)];
+    CGRect currentTextField = myTextField.frame;
+    currentTextField.origin.x = (CGRectGetWidth(self.view.frame) - CGRectGetWidth(currentTextField)) / 2;
+    myTextField.frame = currentTextField;
+    myTextField.backgroundColor = [UIColor grayColor];
+    myTextField.layer.borderWidth =1;
+    myTextField.layer.borderColor = [UIColor blackColor].CGColor;
+    myTextField.text = self.myText1;
+    myTextField.textAlignment = NSTextAlignmentCenter;
+    myTextField.delegate = self;
+    [self.view addSubview:myTextField];
+    
+    self.myTextField.text = self.myText1;
     
 }
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    //NSLog(@"You entered %@", textField.text);
+
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    NSLog(@"You entered %@", textField.text);
+    
+    [textField resignFirstResponder];
+    
+    SecondViewController  * secondVC = [[SecondViewController alloc] init];
+    secondVC.textValue = textField.text;
+    secondVC.rowValue = self.myIndexPath;
+    
+     NSLog(@"text = %@ , rowValue = %d", textField.text,self.myIndexPath);
+    
+    [self.navigationController pushViewController:secondVC animated:YES];
+
+    return YES;
+}
+
+
+      
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

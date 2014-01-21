@@ -7,7 +7,7 @@
 //
 
 #import "SecondViewController.h"
-#import "ThirdViewController.h";
+#import "ThirdViewController.h"
 
 @interface SecondViewController ()
 
@@ -37,7 +37,18 @@
     if(cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
-    cell.textLabel.text = self.data[indexPath.row];
+    
+    if(self.textValue == NULL){
+        cell.textLabel.text = self.data[indexPath.row];
+    }else{
+        
+        if(indexPath.row == self.rowValue){
+            cell.textLabel.text = self.textValue;
+        }else{
+            cell.textLabel.text = self.data[indexPath.row];
+        }
+        
+    }
     
     return cell;
     
@@ -53,6 +64,7 @@
     ThirdViewController * thirdVC = [[ThirdViewController alloc] init];
     thirdVC.title = self.data[indexPath.row];
     thirdVC.myText1 = self.data[indexPath.row];
+    thirdVC.myIndexPath = indexPath.row;
     
     [self.navigationController pushViewController:thirdVC animated:YES];
 }
@@ -77,11 +89,12 @@
     
     self.data = @[@"aa",@"bb",@"cc",@"dd",@"ee",@"ff"];
 
-
+    //self.data[self.rowValue] = self.textValue.text;
     
     UITableView *myTable = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped];
     myTable.dataSource = self;
     myTable.delegate = self;
+
     
     [self.view addSubview:myTable];
     //self.data = [NSArray arrayWithObjects:@"aa", @"bb",@"cc", nil];
@@ -91,6 +104,7 @@
     //UITableView *tableView = [[[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped] ];
  
 }
+
 
 - (void)didReceiveMemoryWarning
 {
