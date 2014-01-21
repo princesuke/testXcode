@@ -30,12 +30,26 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    UILabel * mylabel1 = [[UILabel alloc] initWithFrame:CGRectMake(20, 100, 200, 100)];
+    UILabel * mylabel1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+
     mylabel1.textColor = [UIColor blackColor];
     mylabel1.text = self.myText1;
+    mylabel1.textAlignment = NSTextAlignmentCenter;
+    mylabel1.layer.borderWidth = 1;
+    mylabel1.layer.borderColor = [UIColor redColor].CGColor;
+    
+    
+    // center button
+    CGRect currentFrame = mylabel1.frame;
+    currentFrame.origin.x = (CGRectGetWidth(self.view.frame) - CGRectGetWidth(currentFrame)) / 2;
+    currentFrame.origin.y =(CGRectGetHeight(self.view.frame) - CGRectGetHeight(currentFrame)) / 2;
+    
+    mylabel1.frame = currentFrame;
     
     
     [self.view addSubview:mylabel1];
+    
+
     
 }
 

@@ -10,7 +10,8 @@
 
 @interface ThirdViewController : UIViewController
 
-@property (retain, nonatomic) NSString *myText1;
+@property (copy, nonatomic) NSString *myText1;
 @property (weak, nonatomic) IBOutlet  UILabel *myLabel1;
+@property (nonatomic, assign) NSInteger myInteger;
 
 @end
