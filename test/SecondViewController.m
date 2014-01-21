@@ -7,8 +7,10 @@
 //
 
 #import "SecondViewController.h"
+#import "ThirdViewController.h";
 
 @interface SecondViewController ()
+
 
 @end
 
@@ -23,10 +25,71 @@
     return self;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.data.count;
+}
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+    }
+    cell.textLabel.text = self.data[indexPath.row];
+    
+    return cell;
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ThirdViewController * thirdVC = [[ThirdViewController alloc] init];
+    thirdVC.title = self.data[indexPath.row];
+    thirdVC.myText1 = self.data[indexPath.row];
+    
+    [self.navigationController pushViewController:thirdVC animated:YES];
+}
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+//    
+//    if(cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+//    }
+//    
+//    cell.textLabel.text = @"Eric";
+//    
+//    return cell;
+//}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.data = @[@"aa",@"bb",@"cc",@"dd",@"ee",@"ff"];
+
+
+    
+    UITableView *myTable = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped];
+    myTable.dataSource = self;
+    myTable.delegate = self;
+    
+    [self.view addSubview:myTable];
+    //self.data = [NSArray arrayWithObjects:@"aa", @"bb",@"cc", nil];
+    
+  
+ // Do any additional setup after loading the view from its nib.
+    //UITableView *tableView = [[[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped] ];
+ 
 }
 
 - (void)didReceiveMemoryWarning
