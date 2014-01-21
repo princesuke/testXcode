@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		175DDC3E188D903E004E54FA /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 175DDC3C188D903E004E54FA /* ThirdViewController.m */; };
+		175DDC3F188D903E004E54FA /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175DDC3D188D903E004E54FA /* ThirdViewController.xib */; };
 		F62F3C351883F08B007D5D48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62F3C341883F08B007D5D48 /* Foundation.framework */; };
 		F62F3C371883F08B007D5D48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62F3C361883F08B007D5D48 /* CoreGraphics.framework */; };
 		F62F3C391883F08B007D5D48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62F3C381883F08B007D5D48 /* UIKit.framework */; };
@@ -34,7 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F62F3C311883F08B007D5D48 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = test.app; path = "/Users/worawitnawaritloha/Documents/workspace/testXcode/build/Debug-iphoneos/test.app"; sourceTree = "<absolute>"; };
+		175DDC2F188D7D2A004E54FA /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		175DDC30188D7D2A004E54FA /* testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		175DDC3B188D903E004E54FA /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		175DDC3C188D903E004E54FA /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		175DDC3D188D903E004E54FA /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 		F62F3C341883F08B007D5D48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F62F3C361883F08B007D5D48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F62F3C381883F08B007D5D48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -45,7 +51,6 @@
 		F62F3C431883F08B007D5D48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F62F3C441883F08B007D5D48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F62F3C4F1883F08B007D5D48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F62F3C551883F08B007D5D48 /* testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = testTests.xctest; path = "/Users/worawitnawaritloha/Documents/workspace/testXcode/build/Debug-iphoneos/testTests.xctest"; sourceTree = "<absolute>"; };
 		F62F3C561883F08B007D5D48 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F62F3C6C1883F1E1007D5D48 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		F62F3C6D1883F1E1007D5D48 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
@@ -84,6 +89,8 @@
 			children = (
 				F62F3C3A1883F08B007D5D48 /* test */,
 				F62F3C331883F08B007D5D48 /* Frameworks */,
+				175DDC2F188D7D2A004E54FA /* test.app */,
+				175DDC30188D7D2A004E54FA /* testTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +118,9 @@
 				F62F3C711883F5D7007D5D48 /* SecondViewController.h */,
 				F62F3C721883F5D7007D5D48 /* SecondViewController.m */,
 				F62F3C731883F5D7007D5D48 /* SecondViewController.xib */,
+				175DDC3B188D903E004E54FA /* ThirdViewController.h */,
+				175DDC3C188D903E004E54FA /* ThirdViewController.m */,
+				175DDC3D188D903E004E54FA /* ThirdViewController.xib */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -143,7 +153,7 @@
 			);
 			name = test;
 			productName = test;
-			productReference = F62F3C311883F08B007D5D48 /* test.app */;
+			productReference = 175DDC2F188D7D2A004E54FA /* test.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F62F3C541883F08B007D5D48 /* testTests */ = {
@@ -161,7 +171,7 @@
 			);
 			name = testTests;
 			productName = testTests;
-			productReference = F62F3C551883F08B007D5D48 /* testTests.xctest */;
+			productReference = 175DDC30188D7D2A004E54FA /* testTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -205,6 +215,7 @@
 				F62F3C751883F5D7007D5D48 /* SecondViewController.xib in Resources */,
 				F62F3C501883F08B007D5D48 /* Images.xcassets in Resources */,
 				F62F3C701883F1E1007D5D48 /* FirstViewController.xib in Resources */,
+				175DDC3F188D903E004E54FA /* ThirdViewController.xib in Resources */,
 				F62F3C3F1883F08B007D5D48 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F62F3C741883F5D7007D5D48 /* SecondViewController.m in Sources */,
+				175DDC3E188D903E004E54FA /* ThirdViewController.m in Sources */,
 				F62F3C451883F08B007D5D48 /* AppDelegate.m in Sources */,
 				F62F3C6F1883F1E1007D5D48 /* FirstViewController.m in Sources */,
 				F62F3C411883F08B007D5D48 /* main.m in Sources */,
