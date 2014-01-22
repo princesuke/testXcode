@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ThirdViewController : UIViewController
+@interface ThirdViewController : UIViewController <UITextFieldDelegate>
 
-@property (retain, nonatomic) NSString *myText1;
+@property (copy, nonatomic) NSString *myText1;
 @property (weak, nonatomic) IBOutlet  UILabel *myLabel1;
+@property (nonatomic, assign) NSInteger myIndexPath;
+
+@property (strong, nonatomic) IBOutlet UITextField *myTextField;
 
 @end

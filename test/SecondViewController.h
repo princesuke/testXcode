@@ -12,4 +12,7 @@
 
 @property (nonatomic, strong) NSArray *data;
 
+@property(nonatomic,assign) NSInteger rowValue;
+@property (copy, nonatomic) NSString *textValue;
+
 @end

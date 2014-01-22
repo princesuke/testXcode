@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="myButton" destination="Ya3-Jc-B6t" id="YLu-ih-U12"/>
                 <outlet property="myLabel" destination="SHY-NI-oxx" id="8bo-a5-3w2"/>
+                <outlet property="nameLabel" destination="jqw-JZ-spN" id="6WO-Y0-Twc"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -24,15 +25,32 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ya3-Jc-B6t">
-                    <rect key="frame" x="126" y="310" width="46" height="30"/>
+                    <rect key="frame" x="126" y="241" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button">
+                    <state key="normal" title="View 2">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="JEy-QA-MRd"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfN-DM-bhT">
+                    <rect key="frame" x="85" y="448" width="151" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Edit Name">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="editNameButtonPressed:" destination="-1" eventType="touchUpInside" id="8zq-ea-ObF"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqw-JZ-spN">
+                    <rect key="frame" x="20" y="400" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
