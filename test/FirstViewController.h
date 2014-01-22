@@ -13,7 +13,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (weak, nonatomic) IBOutlet UIButton *myButton;
 
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 
 - (IBAction)buttonClicked:(id)sender;
+- (IBAction)editNameButtonPressed:(id)sender;
 
 @end

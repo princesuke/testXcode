@@ -86,8 +86,7 @@
     
      NSLog(@"text = %@ , rowValue = %d", textField.text,self.myIndexPath);
     
-    [self.navigationController pushViewController:secondVC animated:YES];
-
+    [self.navigationController popViewControllerAnimated:YES];
     return YES;
 }
 
